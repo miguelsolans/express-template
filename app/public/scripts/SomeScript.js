@@ -1,7 +1,11 @@
 define([
-    'jquery'
+    'jquery',
+    'bootstrap'
 ], function ($) {
+    "use strict";
 
-    console.log("SomeScript Ready!");
+    $(document).ready(() => {
+        console.log("Document Ready to Fire!")
+    });
 
 });
