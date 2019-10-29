@@ -1,6 +1,6 @@
 # NodeJS Skeleton App
 
-This repository contains a Simple App build with NodeJS, aiming for a quick start by using a standard App Skeleton.
+This repository contains a Simple App build with NodeJS, aiming for a quick start by using a standard App Skeleton design.
 
 ## How to use
 
@@ -16,7 +16,7 @@ Install all NodeJS dependencies by using Node Package Manager command
 $ npm install
 ```
 
-This Sekeleton features Nodemon which allow you to reset the server each time a file has been changed and saved, therefore, you can quickly start, for development purposes, by running the command
+This Sekeleton features Nodemon which allow you to reset the server each time a file changes. You can quickly start, for development purposes, by running the command
 
 ```
 $ npm test
@@ -30,13 +30,16 @@ $ npm start
 
 ## What's Inside?
 
-This project already contains some of the most common Node Modules pre-installed. Not only for the backend, but frontend-wise, featuring some features allowing NodeJS developers a quick project start.
+This project already contains some of the most common used Node Modules pre-installed. Not only for the backend, but frontend-wise
 
 ### Back-end Technologies
-1. EJS: Template Engine
-1. Express: server framework
+1. [EJS](https://ejs.co/): Template Engine
+1. [Express](https://expressjs.com/): server framework
 
 ### Fontend Technologies
-1. RequireJS: JavaScript file and module loader
-1. jQuery
+1. [RequireJS](https://requirejs.org/): JavaScript file and module loader
+1. [jQuery](https://jquery.com/)
+1. [Bootsrap](https://getbootstrap.com/)
+
+
 
