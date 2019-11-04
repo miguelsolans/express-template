@@ -1,8 +1,12 @@
 require.config({
     "paths": {
+        // External
         "jquery": "external/jquery",
-        "bootstrap": ["external/bootstrap", ],
-        "SomeScript": "SomeScript"
+        "bootstrap": "external/bootstrap",
+
+        // Modules
+        "Person": "modules/Person",
+        "uiTest": "modules/ui-test"
     },
     "bootstrap": {
         "deps": [
@@ -12,6 +16,13 @@ require.config({
 });
 
 //Main module
-require(["SomeScript"], function () {
-    console.log("RequireJS Modules Loaded");
-});
+// require([
+//
+// ], function () {
+//     console.log("RequireJS Modules Loaded");
+// });
+
+require([
+    'Person',
+    'uiTest'
+], () => console.log("RequireJS Modules Loaded"));

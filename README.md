@@ -33,11 +33,11 @@ $ npm start
 This project already contains some of the most common used Node Modules pre-installed. Not only for the backend, but frontend-wise
 
 ### Back-end Technologies
-1. [EJS](https://ejs.co/): Template Engine
-1. [Express](https://expressjs.com/): server framework
+1. [EJS](https://ejs.com/)
+1. [Express](https://expressjs.com/)
 
 ### Fontend Technologies
-1. [RequireJS](https://requirejs.org/): JavaScript file and module loader
+1. [RequireJS](https://requirejs.org/)
 1. [jQuery](https://jquery.com/)
 1. [Bootsrap](https://getbootstrap.com/)
 
