@@ -1,11 +1,26 @@
 // Loading modules
+const createError   = require('http-errors');
 // Express server
 const express       = require('express');
 const app           = express();
 // Body Parser
-const bodyParser    = require('body-parser'); // to handle form posts
+const bodyParser    = require('body-parser');
+// Morgan For Request Status
+const logger        = require('morgan');
 // MongoDB
 const mongoose      = require('mongoose');
+
+mongoose.connect('mongodb://127.0.0.1:27017/HelloWorldDB', {
+    useNewUrlParser: true, useUnifiedTopology: true })
+    .then(() => {
+        console.log("Connection to MongoDB successfully established")
+    })
+    .catch(() => {
+        console.log("Couldn't connect to MongoDB");
+    });
+
+// Display Request Status
+app.use(logger('dev'));
 
 // Tell node where public files are located
 app.use(express.static('./app/public'));
@@ -25,9 +40,8 @@ app.use(bodyParser.json());
 // Define Routes
 const RootRoutes = require('../app/routes/index');
 
-// Webapp Filmes Routes
+// Webapp Root Routes
 app.use('/', RootRoutes);
-
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
