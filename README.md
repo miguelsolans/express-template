@@ -35,11 +35,12 @@ This project already contains some of the most common used Node Modules pre-inst
 ### Back-end Technologies
 1. [EJS](https://ejs.com/)
 1. [Express](https://expressjs.com/)
+1. [Mongoose](https://mongoosejs.com/)
 
 ### Fontend Technologies
 1. [RequireJS](https://requirejs.org/)
 1. [jQuery](https://jquery.com/)
-1. [Bootsrap](https://getbootstrap.com/)
+1. [Bootstrap](https://getbootstrap.com/)
 
 
 
