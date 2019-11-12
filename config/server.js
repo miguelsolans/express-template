@@ -10,7 +10,7 @@ const logger        = require('morgan');
 // MongoDB
 const mongoose      = require('mongoose');
 
-mongoose.connect('mongodb://127.0.0.1:27017/obras', {
+mongoose.connect('mongodb://127.0.0.1:27017/HelloWorldDB', {
     useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log("Connection to MongoDB successfully established")
@@ -39,10 +39,9 @@ app.use(bodyParser.json());
 
 // Define Routes
 const RootRoutes = require('../app/routes/index');
-//
 
 // Webapp Root Routes
-app.use('/obras', RootRoutes);
+app.use('/', RootRoutes);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
