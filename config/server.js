@@ -1,3 +1,9 @@
+/*
+ * Server Configuration
+ * Author: Miguel Solans
+ * Notes: Load server modules and general setup
+ */
+
 // Loading modules
 const createError   = require('http-errors');
 // Express server
@@ -37,11 +43,8 @@ app.use(bodyParser.urlencoded({
 // To read it in JSON
 app.use(bodyParser.json());
 
-// Define Routes
-const RootRoutes = require('../app/routes/index');
-
-// Webapp Root Routes
-app.use('/', RootRoutes);
+// Import Routes Interfaces
+app.use('/', require('./routes'));
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

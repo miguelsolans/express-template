@@ -1,6 +1,7 @@
-/* models/person
+/*
+ * model/person
  * Author: Miguel Solans
- * Notes: Prize Model
+ * Notes:
  */
 
 const mongoose = require('mongoose');

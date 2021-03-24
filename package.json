@@ -1,16 +1,16 @@
 {
-  "name": "filmes",
+  "name": "Template",
   "version": "1.0.0",
-  "description": "",
+  "description": "Quick REST Node.JS Template",
   "main": "app",
   "scripts": {
-    "test": "nodemon app",
+    "dev": "nodemon app",
     "start": "node app"
   },
   "author": "Miguel Solans",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^2.7.1",
+    "ejs": "^2.7.4",
     "express": "^4.17.1",
     "http-errors": "^1.7.3",
     "mongoose": "^5.7.7",

@@ -1,4 +1,5 @@
-/* Entry Point
+/*
+ * Entry Point
  * Author: Miguel Solans
  */
 const app     = require('./config/server');

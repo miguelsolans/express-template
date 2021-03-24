@@ -1,3 +1,9 @@
+/*
+ * routes/index
+ * Author: Miguel Solans
+ * Notes: View entity for Person
+ */
+
 // Server Routes
 const express = require('express');
 const router = express.Router();

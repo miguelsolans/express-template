@@ -1,4 +1,8 @@
-const mongoose  = require('mongoose');
+/*
+ * controller/person
+ * Author: Miguel Solans
+ * Notes:
+ */
 const Person    = require('../models/person');
 
 module.exports.list = (query) => {
