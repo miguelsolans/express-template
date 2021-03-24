@@ -1,6 +1,6 @@
 # NodeJS REST Skeleton App
 
-This repository contains a Simple REST App build with NodeJS and Express.
+This NodeJS application bundles many of commonly used node modules for REST Applications following a Model-View-Controller architecture.
 
 ## How to use
 
@@ -30,7 +30,7 @@ $ npm run start
 
 ## What's Inside?
 
-This project already contains some of the most commonly used modules, backend and frontend-wise.
+This project bundles some of the most commonly used modules by REST and Frontend monolithic Servers.
 
 ### Back-end Technologies
 1. [EJS](https://ejs.com/)
@@ -41,6 +41,3 @@ This project already contains some of the most commonly used modules, backend an
 1. [RequireJS](https://requirejs.org/)
 1. [jQuery](https://jquery.com/)
 1. [Bootstrap](https://getbootstrap.com/)
-
-
-
