@@ -1,6 +1,6 @@
-# NodeJS Skeleton App
+# NodeJS REST Skeleton App
 
-This repository contains a Simple App build with NodeJS, aiming for a quick start by using a standard App Skeleton design.
+This repository contains a Simple REST App build with NodeJS and Express.
 
 ## How to use
 
@@ -25,12 +25,12 @@ $ npm run dev
 Or a shortcut to run using node
 
 ```
-$ npm run dev
+$ npm run start
 ```
 
 ## What's Inside?
 
-This project already contains some of the most common used Node Modules pre-installed. Not only for the backend, but frontend-wise
+This project already contains some of the most commonly used modules, backend and frontend-wise.
 
 ### Back-end Technologies
 1. [EJS](https://ejs.com/)
