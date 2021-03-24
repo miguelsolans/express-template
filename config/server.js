@@ -13,6 +13,7 @@ const app           = express();
 const bodyParser    = require('body-parser');
 // Morgan For Request Status
 const logger        = require('morgan');
+const path          = require('path');
 // MongoDB
 const mongoose      = require('mongoose');
 
@@ -26,14 +27,16 @@ mongoose.connect('mongodb://127.0.0.1:27017/HelloWorldDB', {
     });
 
 // Display Request Status
-app.use(logger('dev'));
+app.use( logger('dev') );
 
 // Tell node where public files are located
 app.use(express.static('./app/public'));
 
 // Setup EJS View Engine
+console.log(__dirname);
+app.set('views', "./app/views/");
 app.set('view engine', 'ejs');
-app.set('views', './app/views');
+
 
 // urlencoded tells body-parser to extract data from <from>
 app.use(bodyParser.urlencoded({
@@ -46,19 +49,15 @@ app.use(bodyParser.json());
 // Import Routes Interfaces
 app.use('/', require('./routes'));
 
-// catch 404 and forward to error handler
-app.use((req, res, next) => {
-    next(createError(404));
-});
-// error handler
+// Error Handler
 app.use((err, req, res, next) => {
-    // set locals, only providing error in development
-    res.locals.message = err.message;
-    res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-    // render the error page
+    // Catch error details
     res.status(err.status || 500);
-    res.render('error');
+    res.jsonp({
+        title: err.title,
+        message: err.message,
+        stack: err
+    });
 });
 
 // Module Export

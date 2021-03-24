@@ -16,6 +16,10 @@ router.get('/', (req, res) => {
         .catch(err => res.status(500).jsonp(err));
 });
 
+router.get('/home', (req, res) => {
+    res.render('home');
+});
+
 router.post('/', (req, res) => {
     Persons.addNew(req.body)
         .then(data => res.json(data))
