@@ -19,13 +19,13 @@ $ npm install
 This Sekeleton features Nodemon which allow you to reset the server each time a file changes. You can quickly start, for development purposes, by running the command
 
 ```
-$ npm test 
+$ npm run dev 
 ```
 
 Or a shortcut to run using node
 
 ```
-$ npm start
+$ npm run dev
 ```
 
 ## What's Inside?
